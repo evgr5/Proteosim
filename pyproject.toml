@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Proteosim"
+version = "0.1.0"
+description = "Package to simulate proteomics experiments."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = Eva Gröne, mail= eva.groene@stud.uni-heidelberg.de}]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pytest", 
+    "matplotlib",
+    "pyteomics"
+]
+
+[tool.setuptools.packages.find]
+include = ["Proteosim*"]
