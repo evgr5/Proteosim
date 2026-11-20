@@ -1,10 +1,10 @@
 from proteosim.liquid_chromatography import (
        predict_lc_retention_times,
-       plot_retention_time,
        select_retention_time_window,
    )
 
 def test_predict_lc_retention_times():
+    from pyteomics import achrom
     peptides = ["THISISATESTSEQ","ATESTWWW","AAAAAA","LLLLLL"]
     expected = {}
     for pep in peptides:
